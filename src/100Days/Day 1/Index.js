@@ -3,6 +3,7 @@ import LoginButton from "./components/LoginButton";
 import LogoutButton from "./components/LogoutButton";
 import Profile from "./components/Profile";
 import { useAuth0 } from "@auth0/auth0-react";
+import Data from "../Day 2/Components/Data";
 
 const Index = () => {
   const { isLoading, error, isAuthenticated } = useAuth0();
@@ -17,7 +18,7 @@ const Index = () => {
         <>
           <LoginButton />
           <LogoutButton />
-          <Profile />
+          
         </>
       )}
     </div>
